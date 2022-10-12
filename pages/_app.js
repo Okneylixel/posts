@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css'
 function MyApp({ Component, pageProps }) {
   return (
     <Layount>
-      <ToastContainer />
+      <ToastContainer limit={1} />
       <Component {...pageProps} />
     </Layount>
   )
