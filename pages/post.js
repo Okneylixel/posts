@@ -49,6 +49,10 @@ export default function Posts() {
             username: user.displayName,
          })
          setPost({ description: "" })
+         toast.success('Post has been made', {
+            position: toast.POSITION.TOP_CENTER,
+            autoClose: 1500,
+         })
          return route.push('/')
       }
    }
